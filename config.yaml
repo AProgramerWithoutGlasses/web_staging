@@ -13,7 +13,7 @@ redis:
   password:
 log:
   level: 'info'
-  filename: "run.log"
+  filename: "app.log"
   max_size: 100
   max_age: 100
   max_backups: 100
