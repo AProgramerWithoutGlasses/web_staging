@@ -28,7 +28,7 @@ public class ArticleManager extends AbstractPostsManager {
 }
 ~~~
 
-实习的时候发现部门的项目架构挺好用，于是就偷学了下来。
+
 首先看一下项目结构
 > ├─dao         持久层 数据库操作（mysql、redis）
 > 
@@ -46,9 +46,9 @@ public class ArticleManager extends AbstractPostsManager {
 > 
 > │  └─settings
 > 
-> ├─server      业务层
+> ├─server      接口层（控制层）
 > 
-> └─service     服务器层（等同于控制层）
+> └─service     业务层
 
 通过在 dao、server层定义结构体，在service上声明一个全局的对象，层层调用，以优化上面的问题。
 注意：结构体属性都是**私有**
